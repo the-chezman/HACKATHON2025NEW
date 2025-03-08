@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Oxanium:wght@200..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+html, body {
+    margin: 0;
+}
+
+h1 {
+    font-family: "Oxanium";
+}
+
+p, a {
+    font-family: "Roboto";
+}
+
+a {
+    color: #ebebeb;
+}
+
+#screen {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+#header {
+    display: flex;
+    flex-direction: row;
+    flex: 5;
+    background-color: red;
+}
+
+#footer {
+    flex: 1;
+    background-color: #242424;
+    border-top: 0.2em solid #f0f0f0;
+}
+
+#footer p {
+    color: white
+}
+
+#navbar {
+    background-color: #e6e6e6;
+    flex: 1;
+}
+
+#content {
+    background-color: #f7f7f7;
+    flex: 3;
+    padding: 1em;
+    border-left: 0.2em solid #f0f0f0;
+}
+
+.nav-button {
+    background-color: #3b4d40;
+    margin: 0.1em;
+    padding: 0.3em;
+}
+
+.text-input {
+    display: block;
+    margin: 0.6em;
+    border: none;
+    width: 20em;
+    background-color: #aaa;
+    border-radius: 4px;
+    color: #f0f0f0;
+}

@@ -14,4 +14,3 @@ function findCountry(code)
     }
     return "Country not found."
 }
-console.log(findCountry(1))

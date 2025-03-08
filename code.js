@@ -14,3 +14,10 @@ function findCountry(code)
     }
     return "Country not found."
 }
+
+const genericEmails = ["@gmail.com", "@yahoo.com", "@hotmail.com", "@outlook.com"]
+
+function scamDetector()
+{
+
+}

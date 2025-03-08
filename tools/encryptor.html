@@ -24,8 +24,8 @@
                             </a>
                         </div>
                         <div class="nav-button">
-                            <a href="encryptor.html">
-                                Encryptor
+                            <a href="password-generator.html">
+                                Password Generator
                             </a>
                         </div>
                         <div class="nav-button">
@@ -35,16 +35,20 @@
                         </div>
                     </div>
                     <div id="content">
-                        <h1>Encryptor</h1>
-                        <p>Input text here that you want to encrypt.
+                        <h1>Password Generator</h1>
+                        <p>Enter the desired length of the password, and a
+                            password will be created for you.
                         </p>
-                        <input class="text-input">
-                        <button class="button">Submit</button>
+                        <input id="password-length" class="text-input">
+                        <button class="button", onclick="generatePassword()">Submit</button>
+                        <p id="generated-password">
+
+                        </p>
                     </div>
                 </div>
                 <div id="footer">
                     <p>
-                        No personal information is saved in our server. Scam Sleuth 2025 All Rights Reserved
+                        Footer information
                     </p>
                 </div>
             </div>

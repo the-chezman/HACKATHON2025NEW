@@ -39,8 +39,9 @@
                         <p>Input the text that you want to check to
                             see if it is likely a scam.
                         </p>
-                        <textarea class="multiline-text-input"></textarea>
-                        <button class="button">Submit</button>
+                        <textarea id="scamText" class="multiline-text-input"></textarea>
+                        <button class="button" onclick="detectScam()">Submit</button>
+                        <p id="demo">Results will show up here</p>
                     </div>
                 </div>
                 <div id="footer">

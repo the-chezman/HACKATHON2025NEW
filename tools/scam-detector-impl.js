@@ -59,12 +59,13 @@ let keywords = ["click here",
     "unauthorized",
     "detected"];
 
-function detectScam(text) {
+function detectScam() {
+    let text = document.getElementById("scamText").value;
     let keywordCounter = countKeywords(text);
     if (keywordCounter >= 2) {
-        return true;
+        document.getElementById("demo").innerHTML = "This is most likely a scam, make sure not to click any links.";
     } else {
-        return false;
+        document.getElementById("demo").innerHTML = "This is probably not a scam, check for dangers";
     }
 }
 
@@ -78,7 +79,5 @@ function countKeywords(text) {
             counter += 1;
         }
     }
-    return true;
+    return counter;
 }
-
-detectScam("claim");

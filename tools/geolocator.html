@@ -3,6 +3,7 @@
     <head>
         <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
         <link rel="stylesheet" type="text/css" href="../style.css">
+        <script src="geolocator_code.js"></script>
     </head>
         <body>
             <div id="screen">
@@ -40,9 +41,10 @@
                             origin of into the text field. No personal 
                             information is saved in our server.
                         </p>
-                        <input class="text-input">
+                        <input id="code" class="text-input">
                         
                         <button class="button" onclick="findCountry()">Submit</button>
+                        <p id="demo">Results show up here.</p>
                     </div>
                 </div>
                 <div id="footer">

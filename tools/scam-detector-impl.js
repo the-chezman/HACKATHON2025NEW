@@ -60,11 +60,25 @@ let keywords = ["click here",
     "detected"];
 
 function detectScam(text) {
-    console.log(text);
+    let keywordCounter = countKeywords(text);
+    if (keywordCounter >= 2) {
+        return true;
+    } else {
+        return false;
+    }
+}
+
+function countKeywords(text) {
+    let counter = 0;
     text = text.toLowerCase();
     text = text.replace(/[^\w\s\']|_/g, "")
          .replace(/\s+/g, " ");
-    console.log(text);
+    for (let i = 0; i < keywords.length; i++) {
+        if (text.includes(keywords[i])) {
+            counter += 1;
+        }
+    }
+    return true;
 }
 
-detectScam("Hello! My name is Andrew.");
+detectScam("claim");

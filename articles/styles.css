@@ -94,3 +94,21 @@ img{
     height:px;
 
 }
+.article-entry {
+    background-color: #eee;
+}
+
+.article-title {
+    font-weight: bold;
+    font-size: 1.3em;
+    margin: 0;
+}
+
+.article-description {
+    font-size: 0.9em;
+}
+
+.article-link {
+    color: black;
+    text-decoration: underline;
+}

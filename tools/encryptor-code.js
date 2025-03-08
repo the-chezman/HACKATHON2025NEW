@@ -2,11 +2,10 @@ const passwordCharacters = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ
 
 function generatePassword() {
     let length = document.getElementById("password-length");
-    let generatedPasswordElement = document.getElementById("generated-password");
     let generatedPassword = "";
     for (let i = 0; i < length; i++) {
         let selectedChar = passwordCharacters[Math.floor(Math.random() * passwordCharacters.length)];
         generatedPassword = generatedPassword + selectedChar;
     }
-    alert(generatedPassword);
+    document.getElementById("generated-password") = generatedPassword;
 }

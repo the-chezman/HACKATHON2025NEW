@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Oxanium:wght@200..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+html, body {
+    margin: 0;
+}
+
+h1 {
+    font-family: "Oxanium";
+}
+
+p, a {
+    font-family: "Roboto";
+}
+
+a {
+    color: #ebebeb;
+}
+
+#screen {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+#header {
+    display: flex;
+    flex-direction: row;
+    flex: 5;
+    background-color: rgb(255, 255, 255);
+}
+
+#footer {
+    flex: 1;
+    background-color: #242424;
+    border-top: 0.2em solid #f0f0f0;
+}
+
+#footer p {
+    color: white
+}
+
+#navbar {
+    background-color: #e6e6e6;
+    flex: 1;
+    color:#242424;
+}
+
+#content {
+    background-color: #ffffff;
+    flex: 3;
+    padding: 1em;
+    border-left: 0.2em solid #ffffff;
+}
+
+.nav-button {
+    background-color: #3b4d40;
+    margin: 0.1em;
+    padding: 0.3em;
+    color:black;
+}
+.nav-separate {
+    background-color: #5f7766;
+    margin: 0.1em;
+    padding: 0.3em;
+    color:rgb(236, 236, 236);
+}
+.whiteText{
+    color:#ebe7e7;
+}
+.headerThing{
+    background-color: #b1ccb9;
+    font-family: "Oxanium";
+    color:#0e0707;
+}
+
+
+.text-input {
+    display: block;
+    margin: 0.6em;
+    border: none;
+    width: 20em;
+    background-color: #aaa;
+    border-radius: 4px;
+    color: #f0f0f0;
+}
+img{
+    align-items: center;
+    display: flex;
+    margin: auto;
+    justify-content: center;
+    width: 400px;
+    height:px;
+
+}

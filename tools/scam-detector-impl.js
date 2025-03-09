@@ -59,13 +59,16 @@ let keywords = ["click here",
     "unauthorized",
     "detected"];
 
+let keywordList = [];
+
 function detectScam() {
     let text = document.getElementById("scamText").value;
     let keywordCounter = countKeywords(text);
-    if (keywordCounter >= 2) {
-        document.getElementById("demo").innerHTML = "This is most likely a scam, make sure not to click any links.";
+    
+    if (keywordCounter >= 4) {
+        document.getElementById("demo").innerHTML = "This is most likely a scam, make sure not to click any links. Keywords found: " + keywordList;
     } else {
-        document.getElementById("demo").innerHTML = "This is probably not a scam, check for dangers";
+        document.getElementById("demo").innerHTML = "This is probably not a scam, but still check for dangers. Keywords found: " + keywordList;
     }
 }
 
@@ -77,6 +80,7 @@ function countKeywords(text) {
     for (let i = 0; i < keywords.length; i++) {
         if (text.includes(keywords[i])) {
             counter += 1;
+            keywordList.push(" " + keywords[i]);
         }
     }
     return counter;

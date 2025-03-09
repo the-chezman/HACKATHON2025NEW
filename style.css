@@ -68,3 +68,8 @@ a {
     border-radius: 4px;
     color: #f0f0f0;
 }
+
+#newPassword {
+    max-width: 100vw;
+    text-wrap: wrap;
+}
